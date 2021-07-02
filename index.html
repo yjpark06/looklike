@@ -95,6 +95,7 @@
             // predict can take in an image, video or canvas html element
             const prediction = await model.predict(webcam.canvas);
 
+            //추후 코드 수정 필요. 전부다 돌면서 30% 이상으로 할 필요가 있음
             if (prediction[0].className == 'myFace' && prediction[0].probability.toFixed(2) > 0.80) {
                 window.location.href = "./result.html";
             } else {

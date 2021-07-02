@@ -110,11 +110,11 @@
 
             //잘 나오는지 확인 필요(마스크, 노마스크, 바위, 보)
             if (prediction[0].className == 'myFace' && prediction[0].probability.toFixed(2) > 0.60) {
-                window.location.href = "./result.html";
+                window.location.href = "./result_1.html";
             } else if (prediction[1].className == '연예인_1' && prediction[1].probability.toFixed(2) > 0.60){
-                window.location.href = "./result.html";
+                window.location.href = "./result_2.html";
             } else if (prediction[2].className == '연예인_2' && prediction[2].probability.toFixed(2) > 0.60){
-                window.location.href = "./result.html";
+                window.location.href = "./result_3.html";
             } else {
                 window.location.href = "./fail.html";
             }

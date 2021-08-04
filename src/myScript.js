@@ -2,21 +2,14 @@
 let contMain = document.querySelector(".cont-main");
 let testStartBtn = document.querySelector(".btn-test-start");
 let cont = document.querySelector(".cont");
-let btn = document.querySelector(".btn-start");
-let resultTxt = document.querySelector(".title_result");
-let webcamEmpty = document.querySelector(".webcam-empty");
 let cover = document.querySelector(".cover");
 
 testStartBtn.addEventListener("click", function(){
     contMain.style.display = "none";
+    cover.style.display = "block";
     cont.style.display = "inline-block";
 });
 
-btn.addEventListener("click", function() {
-    resultTxt.style.display = "block";
-    webcamEmpty.style.display = "none";
-    cover.style.display = "block";
-});
 
 // 메인화면 - 이미지 슬라이드
 const imgSlideItems = document.querySelectorAll(".img-slide-item");
